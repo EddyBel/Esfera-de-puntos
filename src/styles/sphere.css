@@ -1,0 +1,18 @@
+.canvas-sphere {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  perspective: 2000px;
+  perspective-origin: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.point {
+  background: #000;
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
