@@ -1,34 +1,15 @@
-import { useEffect, useRef } from "react";
-import { Sphere } from "./lib/sphere";
-import "./styles/sphere.css";
+import { SphereComponent } from "./doc";
 
 function App() {
-  const canvasSphere = useRef(null);
-
-  useEffect(() => {
-    const sphere = new Sphere(canvasSphere.current);
-    sphere.fps = 15;
-    sphere.createSphere();
-    // sphere.rotateSphere();
-
-    return () => {
-      sphere.destroySphere();
-      sphere.cancelAnimations();
-    };
-  }, []);
-
   return (
     <main className="min-h-screen w-full bg-slate-100">
       <section className="flex items-center justify-center min-h-screen w-full">
         {/* Canvas container sphere */}
-        <div
-          className="canvas-sphere relative"
-          id="canvas-sphere"
-          ref={canvasSphere}
-        ></div>
+        <SphereComponent />
 
+        {/* Wave element decorator */}
         <div className="h-screen w-full absolute flex items-end">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
             <path
               fill="#273036"
               fill-opacity="1"
