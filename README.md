@@ -12,7 +12,7 @@
 
 Este proyecto es una implementación de un diseño interactivo de una esfera 3D creada utilizando TypeScript y React. La esfera está compuesta por puntos que se distribuyen uniformemente en su superficie y pueden moverse y rotar en respuesta a interacciones del usuario. Este repositorio no es un tutorial, sino una demostración del proceso de construcción de este efecto visual.
 
-![Preview](./public/Captura%20de%20pantalla%202024-08-22%20134917.png)
+![Preview](./public/preview.png)
 
 ## Ejemplo de uso
 
